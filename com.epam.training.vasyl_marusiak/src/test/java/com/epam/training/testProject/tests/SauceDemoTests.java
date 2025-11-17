@@ -38,6 +38,7 @@ public class SauceDemoTests extends TestBase {
         String expectedMessage = "Password is required";
         assertThat(actualMessage).contains(expectedMessage);
     }
+
     @ParameterizedTest(name = "Login with valid credentials {0},{1}")
     @MethodSource("com.epam.training.testProject.utils.TestDataProvider#validCredentials")
     public void loginWithValidUserNameAndpassword_UC3(String username, String password) {
