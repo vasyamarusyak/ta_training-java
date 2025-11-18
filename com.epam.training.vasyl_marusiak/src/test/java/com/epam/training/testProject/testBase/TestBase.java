@@ -14,7 +14,7 @@ public class TestBase {
 
     @BeforeEach
     public void setUp() {
-        String browser = System.getProperty("browser", "edge");
+        String browser = System.getProperty("browser", "firefox");
         log.info("Starting browser: {}", browser);
         driver.set(DriverFactory.create(browser));
         getDriver().manage().window().maximize();
